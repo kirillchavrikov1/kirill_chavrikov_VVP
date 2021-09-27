@@ -1,0 +1,47 @@
+var a, b, s, p: real;
+begin
+  Write('Введите длинну и ширину')
+  readln(a);
+  readln(b);
+  s:=a*b;
+  p:=(a+b)*2;
+  Write('Площадь равна: ',s,', Периметр равен: ',p)
+end.
+
+var L, d: real;
+begin
+  Write('Введите диаметр');
+  readln(d);
+  L:=3.14*d;
+  Write('Длинна окружности равна: ',L)
+end.
+
+var a, b, C: real;
+begin
+  Write('Введите числа');
+  readln(A,b);
+  C:=(a*b)/2;
+  Write('Cреднее арифмитическое: ',C)
+end.
+
+var a, b, S, R, P, c: real;
+begin
+  Write('Введите числа');
+  readln(A,b);
+  S:=a*a+b*b;
+  R:=a*a-b*b;
+  P:=a*a*b*b;
+  C:=(a*a)/(b*b);
+  Write('Сумма ',S,'     Разность ',R,'     Произведение ',P,'     Частное ',C)
+end.
+
+var a, b, S, R, P, c: real;
+begin
+  Write('Введите числа');
+  readln(A,b);
+  S:=Abs(a)+Abs(b);
+  R:=Abs(a)-Abs(b);
+  P:=Abs(a)*Abs(b);
+  C:=Abs(a)/Abs(b);
+  Write('Сумма ',S,'     Разность ',R,'     Произведение ',P,'     Частное ',C)
+end.
