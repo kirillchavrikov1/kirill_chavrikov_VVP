@@ -1,47 +1,155 @@
-var a, b, s, p: real;
-begin
-  Write('Введите длинну и ширину');
-  readln(a);
-  readln(b);
-  s:=a*b;
-  p:=(a+b)*2;
-  Write('Площадь равна: ',s,', Периметр равен: ',p);
-end.
+#include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
 
-var L, d: real;
-begin
-  Write('Введите диаметр');
-  readln(d);
-  L:=3.14*d;
-  Write('Длинна окружности равна: ',L);
-end.
+int main(){
+    int a = 5; 
+    int b = 5; 
+    int s = 5; 
+    int p = 5; 
+    
+    printf("Введите длинну: ");
+    scanf("%d", &a);
+    printf("Введите ширину: ");
+    scanf("%d", &b);
+  s=a*b;
+  p=(a+b)*2;
+  
+  printf("Площадь равна: ");
+  printf("%d",s);
+  
+  printf("   Периметр равен:  ");
+  printf("%d",p);
+  
+}
 
-var a, b, C: real;
-begin
-  Write('Введите числа');
-  readln(A,b);
-  C:=(a*b)/2;
-  Write('Cреднее арифмитическое: ',C);
-end.
 
-var a, b, S, R, P, c: real;
-begin
-  Write('Введите числа');
-  readln(A,b);
-  S:=a*a+b*b;
-  R:=a*a-b*b;
-  P:=a*a*b*b;
-  C:=(a*a)/(b*b);
-  Write('Сумма ',S,'     Разность ',R,'     Произведение ',P,'     Частное ',C);
-end.
+-----------------------------------------------------------------------------------------------
+#include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
 
-var a, b, S, R, P, c: real;
-begin
-  Write('Введите числа');
-  readln(A,b);
-  S:=Abs(a)+Abs(b);
-  R:=Abs(a)-Abs(b);
-  P:=Abs(a)*Abs(b);
-  C:=Abs(a)/Abs(b);
-  Write('Сумма ',S,'     Разность ',R,'     Произведение ',P,'     Частное ',C);
-end.
+int main(){
+    float l = 0; 
+    float d = 0; 
+     
+    
+    printf("Введите диаметр: ");
+    scanf("%f", &d);
+    
+    l=3.14*d;
+  
+  printf("Длинна окружности равна: ");
+  printf("%f",l);
+  
+}
+-----------------------------------------------------------------------------------------------
+
+#include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    float a = 0; 
+    float b = 0; 
+    float C = 0; 
+     
+    
+    printf("Введите число: ");
+    scanf("%f", &a);
+    
+    printf("Введите число: ");
+    scanf("%f", &b);
+    
+    C=(a+b)/2;
+  
+  printf("CР: ");
+  printf("%f",C);
+  
+}
+-----------------------------------------------------------------------------------------------
+
+
+#include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    float a = 0; 
+    float b = 0; 
+    float S = 0; 
+    float R = 0;
+    float P = 0;
+    float C = 0;
+    
+    printf("Введите число: ");
+    scanf("%f", &a);
+    
+    printf("Введите число: ");
+    scanf("%f", &b);
+    
+  S=a*a+b*b;
+  R=a*a-b*b;
+  P=a*a*b*b;
+  C=(a*a)/(b*b);
+  
+  printf("   Сумма: ");
+  printf("%f",S);
+  
+  printf("   Разность: ");
+  printf("%f",R);
+  
+  printf("   Произведение: ");
+  printf("%f",P);
+  
+  printf("   Частное: ");
+  printf("%f",C);
+
+  
+}
+
+-----------------------------------------------------------------------------------------------
+
+
+#include <stdio.h>
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    float a = 0; 
+    float b = 0; 
+    float S = 0; 
+    float R = 0;
+    float P = 0;
+    float C = 0;
+    
+    printf("Введите число: ");
+    scanf("%f", &a);
+    
+    printf("Введите число: ");
+    scanf("%f", &b);
+    
+  S=abs(a)+abs(b);
+  R=abs(a)-abs(b);
+  P=abs(a)*abs(b);
+  C=abs(a)/abs(b);
+  
+  printf("   Сумма: ");
+  printf("%f",S);
+  
+  printf("   Разность: ");
+  printf("%f",R);
+  
+  printf("   Произведение: ");
+  printf("%f",P);
+  
+  printf("   Частное: ");
+  printf("%f",C);
+
+  
+}
