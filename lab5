@@ -1,1 +1,46 @@
 1.
+#include <stdio.h> 
+#include <cmath> 
+int main()
+{
+   float x1; 
+   float x2; 
+   float y1; 
+   float y2; 
+   float R; 
+    printf("Введите Х1: "); 
+    scanf("%f", &x1);
+    printf("Введите У1: "); 
+    scanf("%f", &y1);
+    printf("Введите Х2: "); 
+    scanf("%f", &x2);
+    printf("Введите У2: "); 
+    scanf("%f", &y2);
+    R = sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+   printf("Расстояние равно: ");
+   printf("%f",R); 
+}
+-------------------------------------------------------------------------------------
+2.
+#include <stdio.h> 
+#include <cmath> 
+int main()
+{
+   float A; 
+   float B; 
+   float C; 
+   float AC; 
+   float BC; 
+    printf("Введите A: "); 
+    scanf("%f", &A);
+    printf("Введите B: "); 
+    scanf("%f", &B);
+    printf("Введите C: "); 
+    scanf("%f", &C);
+    
+    ;
+   printf("Расстояние равно: ");
+   printf("%f",R); 
+}
+-------------------------------------------------------------------------------------
+2.
