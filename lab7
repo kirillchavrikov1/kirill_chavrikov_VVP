@@ -1,0 +1,142 @@
+1.
+#include <stdio.h> 
+#include <cmath> 
+int main()
+{
+float pi, A, R; 
+  pi=3.14;
+    printf("Введите градусную меру угла(0 <= A < 360):");
+    printf(" A = ");
+    scanf("%f", &A);
+      R = pi * A / 180; 
+       printf("Результат:");
+       printf(" Угол ");
+       printf("%f", A);
+       printf("° имеет     ");
+      printf("%f", R);
+    printf(" радиан.");
+}
+==============================================================================
+
+
+2.
+#include <stdio.h> 
+#include <cmath> 
+int main()
+{
+float a, Pi, b;
+  printf("Введите значение угла в радианах: ");
+   scanf("%f", &a);
+   Pi=3.14;
+  if ((0<=a) and (a<2*Pi)) 
+    {
+         b=(180/Pi)*a;
+         printf("Значение угла в градусах: ");
+         printf("%f", b);
+    }
+     else
+    {
+         printf("Число должно соответствовать условию - 0<a<2*Pi!");
+    }
+}
+============================================================================================
+
+
+3.
+#include <stdio.h> 
+#include <cmath> 
+int main()
+{
+float X, A, Y;
+  printf("X = ");
+  scanf("%f", &X); 
+  printf("A = ");
+  scanf("%f", &A);
+    A = A / X; 
+     printf("Стоимость 1 кг конфет: ");
+     printf("%f", A);
+     printf(" рублей.   ");
+     printf("Y = ");
+     scanf("%f", &Y);
+    A = A * Y; 
+     printf("Стоимость ");
+     printf("%f", Y);
+    printf(" кг конфет: "); 
+  printf("%f", A);
+printf(" рублей");
+}
+=================================================================================
+
+4.
+#include <stdio.h> 
+#include <cmath> 
+int main()
+{
+  float V1,V2,S,T,K;
+    printf("Введите скорость первого автомобился: ");
+     scanf("%f", &V1);
+    printf("Введите скорость второго автомобиля: ");
+     scanf("%f", &V2);
+    printf("Введите расстояние между автомобилями : ");
+     scanf("%f", &S);
+    printf("Введите прошедшее время: ");
+     scanf("%f", &T);
+       K=S+V1*T+V2*T;
+     printf("Между автомабилями: ");
+  printf("%f", K);
+}
+
+===================================================================
+
+
+5.
+#include <stdio.h> 
+#include <cmath> 
+int main()
+{
+  float A,B,X;
+      printf("Введите коэфициент A:");
+      scanf("%f", &A);
+      printf("Введите коэфициент B: ");
+      scanf("%f", &B);
+      if (A!=0)
+      {
+        X=(-1)*B/A ;
+        printf("X равен : ");
+        printf("%f", X);
+      }
+      else
+      {
+        printf("А не должно равняться 0 ");
+      }
+}
+
+==================================================================================
+6.
+#include <stdio.h> 
+#include <cmath> 
+int main()
+{
+  float a1,a2,b1,b2,c1,c2,x,y,o,o1,o2;
+    printf("Введите a1: ");
+     scanf("%f", &a1);
+    printf("Введите b2: ");
+     scanf("%f", &b1);
+    printf("Введите c1: ");
+     scanf("%f", &c1);
+    printf("Введите a2: ");
+     scanf("%f", &a2);
+    printf("Введите b2: ");
+     scanf("%f", &b2);
+    printf("Введите c2: ");
+     scanf("%f", &c2);
+     o=a1*b2-b1*a2;
+     o1=c1*b2-b1*c2;
+     o2=a1*c2-c1*a2;
+     x=o1/o;
+     y=o2/o;
+     printf("Х равен: ");
+  printf("%f", x);
+     printf("  У равен: ");
+  printf("%f", y);
+}
