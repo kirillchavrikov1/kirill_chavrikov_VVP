@@ -137,6 +137,14 @@ int main()
      y=o2/o;
      printf("Х равен: ");
   printf("%f", x);
-     printf("  У равен: ");
+  if (y=-0)
+  {
+     printf("  У равен: 0");
+  }
+  else
+  {
+      printf("  У равен: ");
   printf("%f", y);
+  }
+     
 }
