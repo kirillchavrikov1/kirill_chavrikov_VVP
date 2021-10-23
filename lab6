@@ -108,12 +108,13 @@ int main()
 #include <cmath> 
 int main()
 {
-   float A, y; 
+   float A, x; 
  
     printf("Введите A: "); 
     scanf("%f", &A);
-   y=pow(A,2);
-   A=y*y*y;
+   x=A*A;
+   x=x*x;
+   A=x*x;
       printf("  A^8 равно: ");
    printf("%f",A); 
 }
