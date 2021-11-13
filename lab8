@@ -1,0 +1,73 @@
+1.
+#include <stdio.h> 
+int main()
+{
+    int R;
+    printf("R:");
+    scanf ("%d", &R);
+    printf("Килобайт: %d\n",R/1024);
+}
+================================================
+2.
+#include <stdio.h>
+int main()
+{
+    int A, B;
+      printf("Введите A:");
+      scanf ("%d", &A);
+      printf("Введите B:");
+      scanf ("%d", &B);
+        if (A>B)
+         {
+           printf("Ответ: %d\n",A/B);
+         }
+        else 
+         {
+           printf("Ведённые данные неверны");
+         }
+}
+=================================================
+3.
+#include <stdio.h>
+int main()
+{
+  int a,b,c;
+    printf("Введите A: ");
+    scanf ("%d", &a);
+    printf("Введите B: ");
+    scanf ("%d", &b);
+      if (a>b)
+       {
+           c=a%b;
+        printf("Длинна незанятой части: %d", c);
+       }
+        else 
+       {
+        printf("Ведённые данные неверны");
+       }
+}
+==================================================
+4.
+#include <stdio.h> 
+int main()
+{
+    int C, z,x;
+    printf("C:");
+    scanf ("%d", &C);
+     z= C/10;
+     x= (C%10)*10;
+    printf("%d\n",z+x);
+}
+==================================================
+5.
+#include <stdio.h> 
+int main()
+{
+    int C,z,x,y;
+    printf("C:");
+    scanf ("%d", &C);
+     z=C/100*10;
+     x=(C%100)/10*100;
+     y=C%10;
+    printf("%d\n", z+x+y);
+}
