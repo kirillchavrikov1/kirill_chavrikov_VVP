@@ -1,0 +1,156 @@
+=============================================================
+#include <stdio.h>
+ int main()
+{
+   int A,B;
+   printf("A:");
+   scanf ("%d", &A);
+   printf("B:");
+   scanf ("%d", &B);
+     if ((A>2) && (B<=3))
+        {
+          printf("Да");
+        }
+     else
+        {
+          printf("Нет");
+        }
+}    
+
+ =============================================================
+
+#include <stdio.h>
+ 
+int main()
+{
+   int A,B,C;
+   printf("A:");
+   scanf ("%d", &A);
+   printf("B:");
+   scanf ("%d", &B);
+   printf("C:");
+   scanf ("%d", &C);
+     if ((A<B) && (B<C))
+      {
+       printf("Да");
+      }
+     else
+      {
+       printf("Нет");
+      }
+}    
+
+ 
+=============================================================
+
+#include <stdio.h>
+ #include <stdlib.h>
+int main()
+{
+   int A;
+   printf("A:");
+   scanf ("%d", &A);
+   A = abs(A);
+    if  ((A>9) && (A<100) && (A%2==0))
+      {
+        printf("Да");
+      }
+       else
+      {
+        printf("Нет");
+      }
+}    
+=============================================================
+
+#include <stdio.h>
+#include <stdlib.h>
+ int main()
+{
+   int A;
+   printf("A:");
+   scanf ("%d", &A);
+   A=abs(A);
+     if  ((((A/100)>(A%100/10)) && ((A%100/10)>(A%10)))||(((A/100)<(A%100/10)) && ((A%100/10)<(A%10))))
+      {
+       printf("Да");
+      }
+     else
+      {
+       printf("Нет");
+      }
+}
+   
+=============================================================
+
+
+
+#include <stdio.h>
+#include <stdlib.h> 
+int main()
+{
+   int A;
+   printf("A:");
+   scanf ("%d", &A);
+   A=abs (A);
+    if  (A%10==A/1000 && A%100/10 == A%1000/100)
+     {
+      printf("Да");
+     }
+    else
+     {
+      printf("Нет");
+     }
+}
+
+
+=============================================================
+
+
+
+#include <stdio.h>
+ 
+int main()
+{
+   float a,b,c;
+   printf("a:");
+   scanf ("%f", &a);
+ 
+   printf("b:");
+   scanf ("%f", &b);
+ 
+   printf("c:");
+   scanf ("%f", &c);
+ 
+     if  ((a*a==b*b+c*c) || (b*b==a*a+c*c) || (c*c==a*a+b*b))
+    {
+     printf("Да");
+    }
+    else
+    {
+     printf("Нет");
+    }
+}
+
+=============================================================
+
+#include <stdio.h>
+ 
+int main()
+{
+   float a,b,c;
+   printf("a:");
+   scanf ("%f", &a);
+   printf("b:");
+   scanf ("%f", &b);
+   printf("c:");
+   scanf ("%f", &c);
+ 
+    if  ("%d\n",(a<b+c) && (b<a+c) && (c<a+b))
+     {
+      printf("Да");
+     }
+    else
+     {
+      printf("Нет");
+     }
+}
