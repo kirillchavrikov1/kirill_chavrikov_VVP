@@ -66,17 +66,8 @@ int main()
     int C,z,x,y;
     printf("C:");
     scanf ("%d", &C);
-     z=C/100*10;
-     x=(C%100)/10*100;
-     y=C%10;
-    printf("%d\n", z+x+y);
-}
-
-#include <stdio.h>
-int main()
-{
-    int A;
-    printf("A:");
-    scanf ("%d", &A);
-    printf("%i\n",A/100*10+(A%100)/10*100+A%10);
+    z = C / 100;
+    x = (C / 10) % 10;
+    y = C % 10;
+    printf("%d\n", (x * 100) + (y * 10) + z);
 }
