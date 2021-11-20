@@ -20,12 +20,14 @@ int main()
 ==============================================
 3. 
 #include <stdio.h>
- int main()
+int main()
 {
-    int k;
-      printf("Введите  K:");
-        scanf ("%d", &k);
-      printf("Ответ: %d\n",k%7+1);
+    int K,N;
+    printf("Введите K:");
+    scanf ("%i", &K);
+    printf("Введите N:");
+    scanf ("%i", &N);
+    printf("%i\n",((K+N-2)%7)+1);
 }
 4. 
 #include <stdio.h>
