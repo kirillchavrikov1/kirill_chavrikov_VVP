@@ -71,3 +71,12 @@ int main()
      y=C%10;
     printf("%d\n", z+x+y);
 }
+
+#include <stdio.h>
+int main()
+{
+    int A;
+    printf("A:");
+    scanf ("%d", &A);
+    printf("%i\n",A/100*10+(A%100)/10*100+A%10);
+}
