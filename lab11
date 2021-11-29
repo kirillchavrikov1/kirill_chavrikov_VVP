@@ -70,17 +70,29 @@ printf("2. Даны три числа. Найти сумму двух наибо
 =======================================
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 int main()
 {
 printf("3. На плоскости расположены три точки: A, B, C. Определить, какая из двух последних точек (B или C) расположена ближе к A, и вывести эту точку и ее расстояние от точки A. \n");
-   float a, b, c;
-   printf("Введите A:");
-   scanf ("%f", &a);
-   printf("Введите B:");
-   scanf ("%f", &b);
-   printf("Введите C:");
-   scanf ("%f", &c);
-     if (abs(a-b)<abs(a-c))  
+   float a1,a2, b1, b2, c1,c2, b, c;
+   printf("Введите координаты A:\n");
+     printf("1 координата = ");
+     scanf ("%f", &a1);
+     printf("2 координата = ");
+     scanf ("%f", &a2);
+   printf("Введите координаты B:\n");
+     printf("1 координата = ");
+     scanf ("%f", &b1);
+     printf("2 координата = ");
+     scanf ("%f", &b2);
+   printf("Введите координаты C:\n");
+     printf("1 координата = ");
+     scanf ("%f", &c1);
+     printf("2 координата = ");
+     scanf ("%f", &c2); 
+     b=sqrt(pow(a1-b1, 2)+pow(a2-b2, 2));
+     c=sqrt(pow(a1-c1, 2)+pow(a2-c2, 2));
+     if (b<c)
       printf("B: %f\n",b);
      else 
       printf("C:  %f\n",c);
